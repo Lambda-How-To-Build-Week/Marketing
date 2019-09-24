@@ -31,12 +31,24 @@
 	// text-justify: inter-word;
 }
 
+.txtbutton {
+    background-color: @color-2;
+    color: @color-4;
+    padding: 4px;
+    width: 35%;
+    text-align: center;
+    .hardborder();
+    &:hover {
+        background-color: @color-4;
+        color: @color-2;
+    }
+}
 .flexcol() {
-	display: flex;
+	display: flex !important;
 	flex-direction: column;
 }
 
 .flexrow() {
-	display: flex;
+	display: flex !important;
 	flex-direction: row;
 }

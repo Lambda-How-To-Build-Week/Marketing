@@ -78,7 +78,8 @@ summary,
 time,
 mark,
 audio,
-video {
+video,
+div.navbox nav .navbar-brand h4 {
   margin: 0;
   padding: 0;
   font-size: 100%;
@@ -122,6 +123,9 @@ table {
   border-spacing: 0;
 }
 /* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box !important;
+}
 @font-face {
   font-family: 'Alfa Slab One';
   font-style: normal;
@@ -136,21 +140,19 @@ table {
   font-display: swap;
   src: local('Merriweather Regular'), local('Merriweather-Regular'), url(https://fonts.gstatic.com/s/merriweather/v21/u-440qyriQwlOrhSvowK_l5-fCZJ.ttf) format('truetype');
 }
-@font-face {
-  font-family: 'Playfair Display';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: local('Playfair Display Regular'), local('PlayfairDisplay-Regular'), url(https://fonts.gstatic.com/s/playfairdisplay/v15/nuFiD-vYSZviVYUb_rj3ij__anPXDTzYhQ.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Raleway';
-  font-style: normal;
-  font-weight: 900;
-  font-display: swap;
-  src: local('Raleway Black'), local('Raleway-Black'), url(https://fonts.gstatic.com/s/raleway/v14/1Ptrg8zYS_SKggPNwK4vWqZPBQ.ttf) format('truetype');
-}
 /* Color Theme Swatches in Hex */
+.txtbutton {
+  background-color: #020873;
+  color: #effde4;
+  padding: 4px;
+  width: 35%;
+  text-align: center;
+  border: 10px solid #020873;
+}
+.txtbutton:hover {
+  background-color: #effde4;
+  color: #020873;
+}
 /****************
 HTML TAGS
 *****************/
@@ -185,7 +187,8 @@ h3 {
   letter-spacing: 1px;
   margin-bottom: 1.2rem;
 }
-h4 {
+h4,
+div.navbox nav .navbar-brand h4 {
   font-family: "Alfa Slab One", sans-serif;
   color: #020873;
   font-size: 2.3rem;
@@ -203,6 +206,12 @@ p .howto {
   color: #020873;
   font-size: inherit;
 }
+a {
+  text-decoration: none !important;
+}
+a:hover {
+  text-decoration: none !important;
+}
 strong {
   font-weight: bold;
 }
@@ -219,6 +228,7 @@ div.main {
   }
 }
 header {
+  display: flex !important;
   flex-direction: row;
   height: 500px;
   display: flex;
@@ -259,7 +269,7 @@ div.mymodal header div.header h2 {
   color: #020873;
 }
 div.mymodal .content1 {
-  display: flex;
+  display: flex !important;
   flex-direction: column;
   padding: 0 25px;
   margin-bottom: 15px;
@@ -279,7 +289,7 @@ div.mymodal .join {
   justify-content: center;
   align-items: center;
 }
-div.mymodal .join .button {
+div.mymodal .join .txtbutton {
   background-color: #020873;
   color: #effde4;
   padding: 4px;
@@ -287,89 +297,125 @@ div.mymodal .join .button {
   text-align: center;
   border: 10px solid #020873;
 }
-div.mymodal .join .button:hover {
+div.mymodal .join .txtbutton:hover {
   background-color: #effde4;
   color: #020873;
 }
-nav {
-  padding: 10px;
-  margin: 20px 0;
-  background-color: #222;
-  max-width: 100%;
-  font-size: 1.6rem;
-  display: flex;
+.bg-dark {
+  background-color: #0e5c64 !important;
+}
+.navbarNav .nav-link {
+  color: #b3d8a0 !important;
+}
+.navbarNav .active {
+  background-color: #e8fcdb !important;
+}
+div.navbox {
+  display: flex !important;
   flex-direction: row;
-  justify-content: space-around;
+  align-items: center;
+  justify-content: space-evenly;
 }
-nav a {
-  color: #b3d8a0;
-  text-decoration: none;
+div.navbox nav {
+  display: flex !important;
+  flex-direction: row;
+  width: 75%;
+  justify-content: space-between !important;
+  align-items: center !important;
+  padding: 10px;
+  /* 		a.nav-link {
+			color: @color-1;
+			text-decoration: none;
+			// font-weight: bold;
+			@media (max-width: 500px) {
+				padding: 12px;
+				margin: 0;
+				border-bottom: 3px solid @color-1;
+				text-align: center;
+			}
+		} */
+  /* 		@media (max-width: 500px) {
+			flex-direction: column;
+			flex-wrap: nowrap;
+			padding: 0;
+			// margin: 0;
+		}*/
 }
-@media (max-width: 500px) {
-  nav a {
-    padding: 12px;
-    margin: 0;
-    border-bottom: 3px solid #b3d8a0;
-    text-align: center;
-  }
+div.navbox nav .navbar-brand h4 {
+  margin: 0;
+  color: #e8fcdb;
 }
-@media (max-width: 500px) {
-  nav {
-    flex-direction: column;
-    flex-wrap: nowrap;
-    padding: 0;
-  }
+div.navbox nav div#navbarNav .navbar-nav {
+  width: 80%;
+  display: flex !important;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
-div.content1 {
-  display: flex;
+div.leader {
+  display: flex !important;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
 }
 @media (max-width: 500px) {
-  div.content1 {
+  div.leader {
     flex-direction: column;
     flex-wrap: nowrap;
     padding: 0;
   }
 }
-div.content1 .services {
+div.leader .services {
   border-bottom: 5px solid #94f1c3;
   text-align: center;
   width: 88%;
   padding: 25px;
 }
+div.leader .services p {
+  line-height: 2;
+}
+div.leader .services .btnFrame {
+  display: flex !important;
+  flex-direction: row;
+  width: 100%;
+  justify-content: flex-end;
+}
+div.leader .services .btn {
+  width: 150px;
+  height: 35px;
+  margin-top: 15px;
+  font-size: 1em;
+}
 @media (max-width: 500px) {
-  div.content1 .services {
+  div.leader .services {
     max-width: 100%;
     width: 100%;
   }
 }
-div.content2 {
+div.learnmore {
   margin: 25px 0 0;
   padding: 35px;
   background-color: #dcfce6;
 }
-div.content2 .client {
-  display: flex;
+div.learnmore .client {
+  display: flex !important;
   flex-direction: row;
   justify-content: space-between;
 }
-div.content2 .client img {
+div.learnmore .client img {
   width: 40%;
   height: 250px;
   object-fit: cover;
   object-position: 0 80%;
 }
-div.content2 .client p {
+div.learnmore .client p {
   line-height: 1.5;
 }
-div.content2 .client .blurb {
+div.learnmore .client .blurb {
   width: 55%;
 }
 div.contact {
   margin: 35px 0;
-  display: flex;
+  display: flex !important;
   flex-direction: row;
 }
 div.contact .bits {
