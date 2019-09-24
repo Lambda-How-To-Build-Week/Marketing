@@ -15,10 +15,12 @@
 
 </head>
 
-<body>
+<body id="top">
+	<a data-scroll href="#top" id="topbtn"><h4>top</h4></a>
+	<!-- <button onclick="topFunction()" id="topbtn" title="Go to top">Top</button> -->
 	<div class="navbox navbar-dark bg-dark">
 		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-			<a class="navbar-brand" href="#">
+			<a class="navbar-brand" href="top">
 				<h4>how to</h4>
 			</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -67,7 +69,9 @@
 			</div>
 			<div class="services">
 				<h3>connect</h3>
-				<p>Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.</p>
+				<p>Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Leverage agile frameworks to provide a robust synopsis for high level overviews.
+					<!-- Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment. -->
+				</p>
 				<a data-scroll href="#connect" class="">
 					<div class="btnFrame"><button type="button" class="btn btn-primary">More...</button></div>
 				</a>
@@ -98,15 +102,37 @@
 		</div>
 		<div class="learnmore" id="connect">
 			<h1>connect</h3>
-			<p>Find a partner, become a teacher, or discover a student of the craft you love.</p>
-			<div class="client">
-				<img src="img/learn01.jpg">
-				<div class="blurb">
-					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum voluptates facilis rem quos debitis animi omnis, illum numquam blanditiis laboriosam ut iure amet corrupti, suscipit sit perferendis magnam, velit deleniti!</p>
+				<p>Find a partner, become a teacher, or discover a student of the craft you love.</p>
+				<div class="client">
+					<img src="img/learn01.jpg">
+					<div class="blurb">
+						<p>Making things makes people happy. We can't prove it, but we know it to be true.</p>
+						<p>Find your happy place, and join one of the friendliest online communities anywhere.</p>
+					</div>
 				</div>
-			</div>
 		</div>
 	</div>
+	<script>
+		//Get the button
+		var mybutton = document.getElementById("topbtn");
+
+		// When the user scrolls down 20px from the top of the document, show the button
+		window.onscroll = function () { scrollFunction() };
+
+		function scrollFunction() {
+			if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+				mybutton.style.display = "block";
+			} else {
+				mybutton.style.display = "none";
+			}
+		}
+
+		// When the user clicks on the button, scroll to the top of the document
+		function topFunction() {
+			document.body.scrollTop = 0;
+			document.documentElement.scrollTop = 0;
+		}
+	</script>
 	<script>
 		var scroll = new SmoothScroll('a[href*="#"]', {
 			speed: 1200

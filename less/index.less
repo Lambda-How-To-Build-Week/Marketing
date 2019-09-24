@@ -232,6 +232,9 @@ div.leader {
 		text-align: center;
 		width: 88%;
 		padding: 25px;
+		&:first-child{
+			.overborder();
+		}
 		p {
 			line-height: 2;
 		}
@@ -320,5 +323,31 @@ div.contact {
 		flex-wrap: nowrap;
 		padding: 0;
 		align-items: center;
+	}
+}
+#topbtn {
+	display: none;
+	position: fixed;
+	bottom: 20px;
+	right: 30px;
+	z-index: 99;
+	font-size: 18px;
+	// border: none;
+	// outline: none;
+	background-color: none;
+	.blockborder();
+	// color: white;
+	cursor: pointer;
+	border-radius: 4px;  
+	h4 {
+		margin: 0;
+		padding: 15px;
+	}
+	&:hover {
+		background-color: @color-2;
+		.blockborder(@color-2);
+		h4 {
+			color: @color-4;
+		}
 	}
 }
