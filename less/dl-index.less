@@ -211,6 +211,9 @@ table {
 .overborder() {
 	border-top: 5px solid @color-borderBase;
 }
+.underborder() {
+	border-bottom: 5px solid @color-borderBase;
+}
 .hardborder() {
 	border: 10px solid @color-2;
 }
@@ -248,6 +251,7 @@ html {
 body {
 	height: 100%;
 	.texts();
+	background-color: @color-4;
 }
 
 h1 {
@@ -264,7 +268,7 @@ h2 {
 }
 h3 {
 	.titles();
-	font-size: 2.3rem;
+	font-size: 2.8rem;
 	letter-spacing: 1px;
 	margin-bottom: 1.2rem;
 }
@@ -314,7 +318,7 @@ header {
 	}
 }
 
-div.modal {
+div.mymodal {
 	max-width: 400px;
 	margin: 0 auto;
 	// border: 5px solid @color-2;
@@ -409,8 +413,9 @@ section.nav {
 }
 
 div.content1 {
-	.flexrow();
-	justify-content: space-between;
+	.flexcol();
+	justify-content: space-evenly;
+	align-items: center;
 	// background-color: @color-1;
 	// padding: 15px 0;
 	// flex-wrap: wrap;
@@ -422,10 +427,10 @@ div.content1 {
 		padding: 0;
 	}
 	.services {
-		.overborder();
+		.underborder();
 		// .blockborder();
-		width: 23%;
-		// text-align: center;
+		text-align: center;
+		width: 88%;
 		padding: 25px;
 		// border: 1px solid @color-3;
 		@media (max-width: 500px) {
@@ -437,26 +442,32 @@ div.content1 {
 
 div.content2 {
 	margin: 25px 0 0;
-	// border-top: 1px solid @color-5;
-	padding: 35px 0 0;
-	// border-bottom: 1px solid @color-5;
+	padding: 35px;
+	background-color:  @color-success-100;
 
 	.client {
 		.flexrow();
 		justify-content: space-between;
-		margin-bottom: 35px;
 		img {
-			max-width: 25%;
-			border-radius: 35px;
+			width: 40%;
+			height: 250px;
+			object-fit: cover;
+			object-position: 0 80%;
+			// border-radius: 35px;
 		}
 		p {
-			max-width: 72%;
+			// max-width: 72%;
+			line-height:1.5;
 		}
 		// :lastChild{
 		// 	margin-bottom: 0;
 		// }
+		.blurb {
+			width: 55%;
+		}
 	}
 }
+
 
 div.contact {
 	margin: 35px 0;

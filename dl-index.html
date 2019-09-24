@@ -4,10 +4,15 @@
 
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/dl-index.css">
 
 	<title>how to :: your how-to site</title>
 
 	<link rel="stylesheet" href="css/dl-index.css">
+
+	<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
 
 	<!--[if lt IE 9]>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -22,79 +27,40 @@
 		</div>
 	</header>
 	<div class="main">
-		<!-- <section class="nav">
-			<nav>
-				<a href="#">About Thomas Katz</a>
-				<a href="#">About Gerald Maus</a>
-				<a href="#">Our Associates</a>
-				<a href="#">Submit Your Audition</a>
-			</nav>
-			<div class="intro">
-				<h3>About Katz & Maus</h3>
-				<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora modi obcaecati fuga, rem possimus
-					reiciendis necessitatibus eum dignissimos, quo assumenda perspiciatis autem totam blanditiis dolorum
-					voluptatum nobis voluptas ad ex.</p>
-			</div>
-		</section> -->
 		<div class="content1">
 			<div class="services">
-				<h4>learn</h4>
-				<p>Podcasting operational change management inside of workflows to establish a framework. Taking seamless key performance indicators offline to maximise the long tail. Keeping your eye on the ball while performing a deep dive on the start-up mentality.</p>
+				<h3>learn</h3>
+				<p>Podcasting operational change management inside of workflows to establish a framework. Taking seamless key performance indicators offline.</p>
+				<p><a data-scroll href="#learn">click to learn</a></p>
 			</div>
 			<div class="services">
-				<h4>share</h4>
-				<p>Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution.</p>
+				<h3>share</h3>
+				<p>Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal has evolved from generation X.</p>
 			</div>
 			<div class="services">
-				<h4>connect</h4>
-				<p>Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clicks from DevOps.</p>
+				<h3>connect</h3>
+				<p>Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.</p>
 			</div>
 		</div>
 		<!-- </div> -->
 		<div class="content2">
-			<!-- <div class="client">
-				<img src="http://www.tromboneshorty.com/wp-content/uploads/2017/06/2017_MathieuBittonL1030269_v1.jpg"
-					alt="">
-				<p>Trombone Shorty’s new album opens with a dirge, but if you think the beloved bandleader, singer,
-					songwriter and horn-blower born Troy Andrews came here to mourn, you got it all wrong. That bit of
-					beautiful New Orleans soul—”Laveau Dirge No. 1,” named after one of the city’s most famous voodoo
-					queens—shows off our host’s roots before Parking Lot Symphony branches out wildly, wonderfully,
-					funkily
-					across 12 diverse cuts.</p>
+			<div class="client" id="learn">
+				<img src="img/learn01.jpg">
+				<div class="blurb">
+					<h3>learn</h3>
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum voluptates facilis rem quos debitis animi omnis, illum numquam blanditiis laboriosam ut iure amet corrupti, suscipit sit perferendis magnam, velit deleniti!</p>
+				</div>
 			</div>
-			<div class="client">
-				<img src="http://www.tromboneshorty.com/wp-content/uploads/2017/06/2017_MathieuBittonL1030269_v1.jpg"
-					alt="">
-				<p>Trombone Shorty’s new album opens with a dirge, but if you think the beloved bandleader, singer,
-					songwriter and horn-blower born Troy Andrews came here to mourn, you got it all wrong. That bit of
-					beautiful New Orleans soul—”Laveau Dirge No. 1,” named after one of the city’s most famous voodoo
-					queens—shows off our host’s roots before Parking Lot Symphony branches out wildly, wonderfully,
-					funkily
-					across 12 diverse cuts.</p>
-			</div> -->
-		</div>
-		<div class="contact">
-			<!-- <div class="bits">
-				<h1>Get In Touch</h1>
-				<h4>Now interviewing new clients</h4>
-			</div>
-			<div class="info">
-				<ul>
-					<li><a href="#">Katz & Maus</a></li>
-					<li><a href="#">@KatzMausEnt</a></li>
-					<li><a href="#">#KatzMausEnt</a></li>
-				</ul>
-			</div> -->
 		</div>
 	</div>
-	<footer>
-		<!-- <nav>
-			<a href="#">About Thomas Katz</a>
-			<a href="#">About Gerald Maus</a>
-			<a href="#">Our Associates</a>
-			<a href="#">Submit Your Audition</a>
-		</nav> -->
-	</footer>
+	<script>
+		var scroll = new SmoothScroll('a[href*="#"]', {
+			speed: 1200
+		});
+	</script>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 
 </html>
