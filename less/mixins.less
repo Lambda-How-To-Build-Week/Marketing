@@ -1,0 +1,42 @@
+.testblock() {
+	border: 1px solid red;
+}
+
+.blockborder() {
+	border: 5px solid @color-borderBase;
+}
+.overborder() {
+	border-top: 5px solid @color-borderBase;
+}
+.underborder() {
+	border-bottom: 5px solid @color-borderBase;
+}
+.hardborder() {
+	border: 10px solid @color-2;
+}
+.deadcenter() {
+	justify-content: center;
+	align-items: center;
+}
+.titles() {
+	font-family: "Alfa Slab One", sans-serif;
+	color: @color-2;
+}
+
+.texts() {
+	font-family: "Merriweather", sans-serif;
+	color: @color-3;
+	font-size: 1.6rem;
+	// text-align: justify;
+	// text-justify: inter-word;
+}
+
+.flexcol() {
+	display: flex;
+	flex-direction: column;
+}
+
+.flexrow() {
+	display: flex;
+	flex-direction: row;
+}

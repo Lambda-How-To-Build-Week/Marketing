@@ -1,7 +1,3 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
 html,
 body,
 div,
@@ -155,6 +151,9 @@ table {
   src: local('Raleway Black'), local('Raleway-Black'), url(https://fonts.gstatic.com/s/raleway/v14/1Ptrg8zYS_SKggPNwK4vWqZPBQ.ttf) format('truetype');
 }
 /* Color Theme Swatches in Hex */
+/****************
+HTML TAGS
+*****************/
 html {
   background-color: #effde4;
   font-size: 62.5%;
@@ -207,6 +206,9 @@ p .howto {
 strong {
   font-weight: bold;
 }
+/****************
+CLASSES
+*****************/
 div.main {
   margin: 15px 5vw;
 }
@@ -289,7 +291,7 @@ div.mymodal .join .button:hover {
   background-color: #effde4;
   color: #020873;
 }
-section.nav nav {
+nav {
   padding: 10px;
   margin: 20px 0;
   background-color: #222;
@@ -299,12 +301,12 @@ section.nav nav {
   flex-direction: row;
   justify-content: space-around;
 }
-section.nav nav a {
+nav a {
   color: #b3d8a0;
   text-decoration: none;
 }
 @media (max-width: 500px) {
-  section.nav nav a {
+  nav a {
     padding: 12px;
     margin: 0;
     border-bottom: 3px solid #b3d8a0;
@@ -312,14 +314,11 @@ section.nav nav a {
   }
 }
 @media (max-width: 500px) {
-  section.nav nav {
+  nav {
     flex-direction: column;
     flex-wrap: nowrap;
     padding: 0;
   }
-}
-section.nav div.intro {
-  padding: 0 0 25px 0;
 }
 div.content1 {
   display: flex;
