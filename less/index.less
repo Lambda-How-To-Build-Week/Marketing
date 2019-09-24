@@ -54,7 +54,9 @@ p {
 
 a {
 	text-decoration: none !important;
-	&:hover {text-decoration: none !important;}
+	&:hover {
+		text-decoration: none !important;
+	}
 }
 
 strong {
@@ -64,6 +66,11 @@ strong {
 /****************
 CLASSES
 *****************/
+.btn-primary {
+	color: @btnFG;
+	background-color: @btnBG;
+	border-color: @btnBG;
+}
 
 div.main {
 	margin: 15px 5vw;
@@ -250,26 +257,34 @@ div.learnmore {
 	margin: 25px 0 0;
 	padding: 35px;
 	background-color: @color-success-100;
-
+	h1, h3 {
+		text-align: center;
+	}
+	p {
+		text-align: center;
+		line-height: 1.5;
+		font-size: 1.2em;
+		margin-bottom: 25px;
+	}
 	.client {
 		.flexrow();
-		justify-content: space-between;
+		justify-content: space-around;
 		img {
-			width: 40%;
+			width: 30%;
 			height: 250px;
 			object-fit: cover;
 			object-position: 0 80%;
 			// border-radius: 35px;
 		}
-		p {
-			// max-width: 72%;
-			line-height: 1.5;
-		}
-		// :lastChild{
-		// 	margin-bottom: 0;
-		// }
 		.blurb {
+			.flexcol();
+			justify-content: space-evenly;
 			width: 55%;
+			p {
+				text-align: left;
+				line-height: 2;
+				font-size: 1em;
+			}
 		}
 	}
 }

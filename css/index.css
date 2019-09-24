@@ -218,6 +218,11 @@ strong {
 /****************
 CLASSES
 *****************/
+.btn-primary {
+  color: #effde4;
+  background-color: #25968a;
+  border-color: #25968a;
+}
 div.main {
   margin: 15px 5vw;
 }
@@ -396,22 +401,37 @@ div.learnmore {
   padding: 35px;
   background-color: #dcfce6;
 }
+div.learnmore h1,
+div.learnmore h3 {
+  text-align: center;
+}
+div.learnmore p {
+  text-align: center;
+  line-height: 1.5;
+  font-size: 1.2em;
+  margin-bottom: 25px;
+}
 div.learnmore .client {
   display: flex !important;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 div.learnmore .client img {
-  width: 40%;
+  width: 30%;
   height: 250px;
   object-fit: cover;
   object-position: 0 80%;
 }
-div.learnmore .client p {
-  line-height: 1.5;
-}
 div.learnmore .client .blurb {
+  display: flex !important;
+  flex-direction: column;
+  justify-content: space-evenly;
   width: 55%;
+}
+div.learnmore .client .blurb p {
+  text-align: left;
+  line-height: 2;
+  font-size: 1em;
 }
 div.contact {
   margin: 35px 0;
