@@ -104,10 +104,13 @@ CLASSES
 
 .tweentxt {
 	margin: 25px 0;
+	padding: 25px 0;
 	text-align: center;
+	p {
 	font-size: 1.5em;
 	line-height: 1.8;
-	// ADD ICONS before and after
+
+	}
 }
 
 .btn-primary {
@@ -184,6 +187,9 @@ div.leader {
 	.flexcol();
 	justify-content: space-evenly;
 	align-items: center;
+	p{
+		text-align: left;
+	}
 	@media (max-width: 500px) {
 		flex-direction: column;
 		flex-wrap: nowrap;
@@ -257,6 +263,12 @@ div.learnmore {
 	}
 }
 
+.neatIcon {
+	display: block;
+	margin: 35px auto;
+	transform: scale(3);
+	fill: @color-1;
+}
 
 /****************
 MISCELLANEOUS

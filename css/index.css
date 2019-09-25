@@ -325,7 +325,10 @@ CLASSES
 }
 .tweentxt {
   margin: 25px 0;
+  padding: 25px 0;
   text-align: center;
+}
+.tweentxt p {
   font-size: 1.5em;
   line-height: 1.8;
 }
@@ -401,6 +404,9 @@ div.leader {
   justify-content: space-evenly;
   align-items: center;
 }
+div.leader p {
+  text-align: left;
+}
 @media (max-width: 500px) {
   div.leader {
     flex-direction: column;
@@ -466,6 +472,12 @@ div.learnmore .client .blurb p {
   text-align: left;
   line-height: 2;
   font-size: 1em;
+}
+.neatIcon {
+  display: block;
+  margin: 35px auto;
+  transform: scale(3);
+  fill: #b3d8a0;
 }
 /****************
 MISCELLANEOUS
