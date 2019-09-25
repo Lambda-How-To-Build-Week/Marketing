@@ -427,7 +427,7 @@ div.leader .services p {
   }
 }
 div.learnmore {
-  margin: 25px 0 0;
+  margin: 35px 0 ;
   padding: 35px;
   background-color: #dcfce6;
 }
@@ -451,6 +451,10 @@ div.learnmore .client img {
   height: 250px;
   object-fit: cover;
   object-position: 0 80%;
+  transition: all 0.5s ease-in-out;
+}
+div.learnmore .client img:hover {
+  transform: scale(1.03);
 }
 div.learnmore .client .blurb {
   display: flex !important;
@@ -462,40 +466,6 @@ div.learnmore .client .blurb p {
   text-align: left;
   line-height: 2;
   font-size: 1em;
-}
-div.contact {
-  margin: 35px 0;
-  display: flex !important;
-  flex-direction: row;
-}
-div.contact .bits {
-  max-width: 325px;
-  min-width: 300px;
-  margin: 0 35px 0 0;
-  padding: 0 35px 0 0;
-}
-div.contact .bits * {
-  padding-bottom: 10px;
-}
-@media (max-width: 500px) {
-  div.contact .bits {
-    margin: auto;
-    padding: 0;
-  }
-  div.contact .bits h4 {
-    display: none;
-  }
-}
-div.contact .info ul li {
-  padding: 10px;
-}
-@media (max-width: 500px) {
-  div.contact {
-    flex-direction: column;
-    flex-wrap: nowrap;
-    padding: 0;
-    align-items: center;
-  }
 }
 /****************
 MISCELLANEOUS
@@ -511,6 +481,7 @@ MISCELLANEOUS
   border: 5px solid #94f1c3;
   cursor: pointer;
   border-radius: 4px;
+  transition: all 0.1s ease-in-out;
 }
 #topbtn h4 {
   margin: 0;
