@@ -27,8 +27,6 @@
 	font-family: "Merriweather", sans-serif;
 	color: @color-3;
 	font-size: 1.6rem;
-	// text-align: justify;
-	// text-justify: inter-word;
 }
 
 .txtbutton {
@@ -43,6 +41,8 @@
         color: @color-2;
     }
 }
+
+
 .flexcol() {
 	display: flex !important;
 	flex-direction: column;
@@ -51,4 +51,20 @@
 .flexrow() {
 	display: flex !important;
 	flex-direction: row;
+}
+
+/****************
+STRAIGHT INCLUDES
+*****************/
+
+.btnFrame {
+	.flexrow();
+	width: 100%;
+	justify-content: flex-end;
+}
+.btn {
+	width: 150px;
+	height: 35px;
+	margin-top: 15px;
+	font-size: 1em;
 }

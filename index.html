@@ -16,12 +16,14 @@
 </head>
 
 <body id="top">
-	<a data-scroll href="#top" id="topbtn"><h4>top</h4></a>
+	<a data-scroll href="#top" id="topbtn">
+		<h4>top</h4>
+	</a>
 	<!-- <button onclick="topFunction()" id="topbtn" title="Go to top">Top</button> -->
 	<div class="navbox navbar-dark bg-dark">
 		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-			<a class="navbar-brand" href="top">
-				<h4>how to</h4>
+			<a class="navbar-brand" href="/">
+				<h4>[how to]</h4>
 			</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
@@ -51,12 +53,15 @@
 		</div>
 	</header>
 	<div class="main">
+		<div>
+			<p class="tweentxt"><span class="logoEmbed">[how to]</span> is a community for people who like to make things.<br />Come explore, share, and make your next project with us!</p>
+		</div>
 		<div class="leader">
 			<div class="services">
 				<h3>learn</h3>
 				<p>Podcasting operational change management inside of workflows to establish a framework. Taking seamless key performance indicators offline.</p>
 				<a data-scroll href="#learn" class="">
-					<div class="btnFrame"><button type="button" class="btn btn-primary">More...</button></div>
+					<div class="btnFrame"><button type="button" class="btn btn-primary">learn more...</button></div>
 				</a>
 
 			</div>
@@ -64,7 +69,7 @@
 				<h3>share</h3>
 				<p>Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal has evolved from generation X.</p>
 				<a data-scroll href="#share" class="">
-					<div class="btnFrame"><button type="button" class="btn btn-primary">More...</button></div>
+					<div class="btnFrame"><button type="button" class="btn btn-primary">share more...</button></div>
 				</a>
 			</div>
 			<div class="services">
@@ -73,19 +78,29 @@
 					<!-- Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment. -->
 				</p>
 				<a data-scroll href="#connect" class="">
-					<div class="btnFrame"><button type="button" class="btn btn-primary">More...</button></div>
+					<div class="btnFrame"><button type="button" class="btn btn-primary">connect more...</button></div>
 				</a>
 			</div>
 		</div>
-		<!-- </div> -->
+		<div>
+			<p class="tweentxt">
+				<div>
+					<p class="tweentxt">Have an idea for a new art project, hardware hack or startup?<br />Find related projects and build on the shoulders of giants.</p>
+				</div>
+			</p>
+		</div>
+
 		<div class="learnmore" id="learn">
 			<h1>learn</h1>
 			<p>People like you make it easy to learn how to make anything, one step at a time.</p>
 			<div class="client">
 				<img src="img/learn01.jpg">
 				<div class="blurb">
-					<p>100’s of hours of video that explores new worlds, teaches creative skills, and helps kids discover new passions.</p>
+					<p>100’s of hours of video that explores new worlds, teaches creative skills, and helps you discover new passions.</p>
 					<p>From the stovetop to the workshop, you are sure to be inspired by the awesome projects that are shared everyday.</p>
+					<a href="" class="">
+						<div class="btnFrame"><button type="button" class="btn btn-primary">Get Started!</button></div>
+					</a>
 				</div>
 			</div>
 		</div>
@@ -97,6 +112,9 @@
 				<div class="blurb">
 					<p>Share ideas and how-to created by you. No matter who you are, we all have secret skills to share. </p>
 					<p>Come join our community of curious innovators, teachers, and life long learners who love to share what they make.</p>
+					<a href="" class="">
+						<div class="btnFrame"><button type="button" class="btn btn-primary">Get Started!</button></div>
+					</a>
 				</div>
 			</div>
 		</div>
@@ -106,8 +124,11 @@
 				<div class="client">
 					<img src="img/learn01.jpg">
 					<div class="blurb">
-						<p>Making things makes people happy. We can't prove it, but we know it to be true.</p>
+						<p>Making things makes people happy. <br />We can't prove it, but we know it to be true.</p>
 						<p>Find your happy place, and join one of the friendliest online communities anywhere.</p>
+						<a href="" class="">
+							<div class="btnFrame"><button type="button" class="btn btn-primary">Get Started!</button></div>
+						</a>
 					</div>
 				</div>
 		</div>
@@ -135,7 +156,7 @@
 	</script>
 	<script>
 		var scroll = new SmoothScroll('a[href*="#"]', {
-			speed: 1200
+			speed: 1000
 		});
 	</script>
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

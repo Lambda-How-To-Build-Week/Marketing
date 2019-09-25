@@ -154,6 +154,77 @@ table {
   color: #020873;
 }
 /****************
+STRAIGHT INCLUDES
+*****************/
+.btnFrame {
+  display: flex !important;
+  flex-direction: row;
+  width: 100%;
+  justify-content: flex-end;
+}
+.btn {
+  width: 150px;
+  height: 35px;
+  margin-top: 15px;
+  font-size: 1em;
+}
+div.mymodal {
+  max-width: 400px;
+  margin: 0 auto;
+  border: 10px solid #020873;
+}
+@media (min-width: 400px) {
+  div.mymodal {
+    margin: 0 auto;
+  }
+}
+div.mymodal header {
+  margin: 0;
+  height: 175px;
+  background-image: linear-gradient(#4bd1a9, #effde4);
+}
+div.mymodal header div.header {
+  align-items: left;
+  width: 400px;
+  border: 0;
+}
+div.mymodal header div.header h2 {
+  color: #020873;
+}
+div.mymodal .content1 {
+  display: flex !important;
+  flex-direction: column;
+  padding: 0 25px;
+  margin-bottom: 15px;
+}
+div.mymodal .content1 p.logfield {
+  padding: 4px;
+  margin: 4px;
+  border: 2px solid #94f1c3;
+}
+div.mymodal .content2 {
+  padding: 0 25px;
+  margin-bottom: 15px;
+}
+div.mymodal .join {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+div.mymodal .join .txtbutton {
+  background-color: #020873;
+  color: #effde4;
+  padding: 4px;
+  width: 35%;
+  text-align: center;
+  border: 10px solid #020873;
+}
+div.mymodal .join .txtbutton:hover {
+  background-color: #effde4;
+  color: #020873;
+}
+/****************
 HTML TAGS
 *****************/
 html {
@@ -215,23 +286,6 @@ a:hover {
 strong {
   font-weight: bold;
 }
-/****************
-CLASSES
-*****************/
-.btn-primary {
-  color: #effde4;
-  background-color: #25968a;
-  border-color: #25968a;
-}
-div.main {
-  margin: 15px 5vw;
-}
-@media (min-width: 1000px) {
-  div.main {
-    max-width: 1000px;
-    margin: 0 auto;
-  }
-}
 header {
   display: flex !important;
   flex-direction: row;
@@ -250,62 +304,9 @@ header div.header {
 header div.header h2 {
   color: #020873;
 }
-div.mymodal {
-  max-width: 400px;
-  margin: 0 auto;
-  border: 10px solid #020873;
-}
-@media (min-width: 400px) {
-  div.mymodal {
-    margin: 0 auto;
-  }
-}
-div.mymodal header {
-  margin: 0;
-  height: 175px;
-  background-image: linear-gradient(#4bd1a9, #effde4);
-}
-div.mymodal header div.header {
-  align-items: left;
-  width: 400px;
-  border: 0;
-}
-div.mymodal header div.header h2 {
-  color: #020873;
-}
-div.mymodal .content1 {
-  display: flex !important;
-  flex-direction: column;
-  padding: 0 25px;
-  margin-bottom: 15px;
-}
-div.mymodal .content1 p.logfield {
-  padding: 4px;
-  margin: 4px;
-  border: 2px solid #94f1c3;
-}
-div.mymodal .content2 {
-  padding: 0 25px;
-  margin-bottom: 15px;
-}
-div.mymodal .join {
-  margin-top: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-div.mymodal .join .txtbutton {
-  background-color: #020873;
-  color: #effde4;
-  padding: 4px;
-  width: 35%;
-  text-align: center;
-  border: 10px solid #020873;
-}
-div.mymodal .join .txtbutton:hover {
-  background-color: #effde4;
-  color: #020873;
-}
+/****************
+CLASSES
+*****************/
 .bg-dark {
   background-color: #0e5c64 !important;
 }
@@ -314,6 +315,31 @@ div.mymodal .join .txtbutton:hover {
 }
 .navbarNav .active {
   background-color: #e8fcdb !important;
+}
+.logoEmbed {
+  font-family: "Alfa Slab One", sans-serif;
+  color: #020873;
+  font-size: inherit;
+}
+.tweentxt {
+  margin: 25px 0;
+  text-align: center;
+  font-size: 1.5em;
+  line-height: 1.8;
+}
+.btn-primary {
+  color: #effde4;
+  background-color: #25968a;
+  border-color: #25968a;
+}
+div.main {
+  margin: 15px 5vw;
+}
+@media (min-width: 1000px) {
+  div.main {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
 }
 div.navbox {
   display: flex !important;
@@ -381,18 +407,6 @@ div.leader .services:first-child {
 div.leader .services p {
   line-height: 2;
 }
-div.leader .services .btnFrame {
-  display: flex !important;
-  flex-direction: row;
-  width: 100%;
-  justify-content: flex-end;
-}
-div.leader .services .btn {
-  width: 150px;
-  height: 35px;
-  margin-top: 15px;
-  font-size: 1em;
-}
 @media (max-width: 500px) {
   div.leader .services {
     max-width: 100%;
@@ -428,7 +442,7 @@ div.learnmore .client img {
 div.learnmore .client .blurb {
   display: flex !important;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
   width: 55%;
 }
 div.learnmore .client .blurb p {
@@ -470,6 +484,9 @@ div.contact .info ul li {
     align-items: center;
   }
 }
+/****************
+MISCELLANEOUS
+*****************/
 #topbtn {
   display: none;
   position: fixed;
