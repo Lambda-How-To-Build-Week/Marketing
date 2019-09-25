@@ -138,18 +138,20 @@ div.navbox {
 		// font-size: 1.6rem !important;
 		.navbar-brand {
 			// .testblock();
-			h4 {
+			justify-content: flex-start;
+			h4, p {
 				&:extend(h4);
 				margin: 0;
 				color: @color-primary-500;
 			}
 		}
 		div#navbarNav {
+			justify-content: flex-end;
 			.navbar-nav {
 				// .testblock();
-				width: 80%;
+				width: 60%;
 				.flexrow();
-				justify-content: space-evenly;
+				justify-content: space-between;
 				li {
 				}
 			}
@@ -171,6 +173,10 @@ div.navbox {
 			padding: 0;
 			// margin: 0;
 		}*/
+	}
+	p {
+		padding: 20px;
+		color: @color-4;
 	}
 }
 
@@ -299,11 +305,8 @@ MISCELLANEOUS
 	right: 30px;
 	z-index: 99;
 	font-size: 18px;
-	// border: none;
-	// outline: none;
-	background-color: none;
+	background-color: @color-borderBase;
 	.blockborder();
-	// color: white;
 	cursor: pointer;
 	border-radius: 4px;  
 	h4 {
@@ -317,4 +320,8 @@ MISCELLANEOUS
 			color: @color-4;
 		}
 	}
+}
+
+.NothingInThisDivButScripts {
+	display: none;
 }
