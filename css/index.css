@@ -540,6 +540,18 @@ div.learnmore .about img {
   transform: scale(3);
   fill: #b3d8a0;
 }
+.breaker {
+  width: 400px;
+  margin: 35px auto;
+  height: 5px;
+  border-bottom: 5px solid #94f1c3;
+}
+@media (max-width: 500px) {
+  .breaker {
+    width: 200px;
+    margin-top: 0;
+  }
+}
 /****************
 MISCELLANEOUS
 *****************/
