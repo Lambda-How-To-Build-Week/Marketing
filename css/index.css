@@ -242,6 +242,7 @@ body {
 h1 {
   font-family: "Alfa Slab One", sans-serif;
   color: #020873;
+  text-transform: lowercase;
   font-size: 6rem;
   margin: 0 0 25px 0;
 }
@@ -255,6 +256,7 @@ h2 {
 h3 {
   font-family: "Alfa Slab One", sans-serif;
   color: #020873;
+  text-transform: lowercase;
   font-size: 2.8rem;
   letter-spacing: 1px;
   margin-bottom: 1.2rem;
@@ -277,6 +279,7 @@ p {
 p .howto {
   font-family: "Alfa Slab One", sans-serif;
   color: #020873;
+  text-transform: lowercase;
   font-size: inherit;
 }
 a {
@@ -297,6 +300,9 @@ header {
   align-items: center;
   background-image: linear-gradient(#4bd1a9, #effde4);
 }
+header.about {
+  height: 300px;
+}
 header div.header {
   align-items: left;
   width: 400px;
@@ -305,6 +311,18 @@ header div.header {
 }
 header div.header h2 {
   color: #020873;
+}
+header div.about {
+  align-items: left;
+  width: 400px;
+  padding: 25px;
+  border: 10px solid #020873;
+}
+header div.about h2 {
+  color: #020873;
+}
+header h2.about {
+  font-size: 3rem;
 }
 /****************
 CLASSES
@@ -321,6 +339,7 @@ CLASSES
 .logoEmbed {
   font-family: "Alfa Slab One", sans-serif;
   color: #020873;
+  text-transform: lowercase;
   font-size: inherit;
 }
 .tweentxt {
@@ -433,7 +452,7 @@ div.leader .services p {
   }
 }
 div.learnmore {
-  margin: 35px 0 ;
+  margin: 35px 0;
   padding: 35px;
   background-color: #dcfce6;
 }
@@ -447,31 +466,45 @@ div.learnmore p {
   font-size: 1.2em;
   margin-bottom: 25px;
 }
-div.learnmore .client {
+div.learnmore .client,
+div.learnmore .about {
   display: flex !important;
   flex-direction: row;
-  justify-content: space-around;
-}
-div.learnmore .client img {
-  width: 30%;
   height: 250px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+div.learnmore .client img,
+div.learnmore .about img {
+  width: 200px;
+  height: 200px;
   object-fit: cover;
   object-position: 0 80%;
   transition: all 0.5s ease-in-out;
 }
-div.learnmore .client img:hover {
+div.learnmore .client img:hover,
+div.learnmore .about img:hover {
   transform: scale(1.03);
 }
-div.learnmore .client .blurb {
+div.learnmore .client .blurb,
+div.learnmore .about .blurb {
   display: flex !important;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
   width: 55%;
 }
-div.learnmore .client .blurb p {
+div.learnmore .client .blurb p,
+div.learnmore .about .blurb p {
   text-align: left;
   line-height: 2;
   font-size: 1em;
+}
+div.learnmore .about .blurb {
+  justify-content: space-evenly;
+}
+div.learnmore .about img {
+  object-fit: cover;
+  object-position: initial;
 }
 .neatIcon {
   display: block;
