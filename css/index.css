@@ -302,7 +302,7 @@ header {
   align-items: center;
   background-image: none;
   overflow: hidden;
-  text-shadow: 0 0 5px white;
+  text-shadow: 0 0 15px #ffffff, 0 0 15px #ffffff;
 }
 header div.cover {
   position: absolute;
