@@ -1,0 +1,396 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+@font-face {
+  font-family: 'Alfa Slab One';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Alfa Slab One Regular'), local('AlfaSlabOne-Regular'), url(https://fonts.gstatic.com/s/alfaslabone/v9/6NUQ8FmMKwSEKjnm5-4v-4Jh2dJhfg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Merriweather Regular'), local('Merriweather-Regular'), url(https://fonts.gstatic.com/s/merriweather/v21/u-440qyriQwlOrhSvowK_l5-fCZJ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Playfair Display Regular'), local('PlayfairDisplay-Regular'), url(https://fonts.gstatic.com/s/playfairdisplay/v15/nuFiD-vYSZviVYUb_rj3ij__anPXDTzYhQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: local('Raleway Black'), local('Raleway-Black'), url(https://fonts.gstatic.com/s/raleway/v14/1Ptrg8zYS_SKggPNwK4vWqZPBQ.ttf) format('truetype');
+}
+/* Color Theme Swatches in Hex */
+html {
+  background-color: #effde4;
+  font-size: 62.5%;
+}
+body {
+  height: 100%;
+  font-family: "Merriweather", sans-serif;
+  color: #222;
+  font-size: 1.6rem;
+}
+h1 {
+  font-family: "Alfa Slab One", sans-serif;
+  color: #020873;
+  font-size: 6rem;
+  margin: 0 0 25px 0;
+}
+h2 {
+  font-family: "Merriweather", sans-serif;
+  color: #222;
+  font-size: 1.6rem;
+  font-size: 2rem;
+  padding: auto;
+}
+h3 {
+  font-family: "Alfa Slab One", sans-serif;
+  color: #020873;
+  font-size: 2.3rem;
+  letter-spacing: 1px;
+  margin-bottom: 1.2rem;
+}
+h4 {
+  font-family: "Alfa Slab One", sans-serif;
+  color: #020873;
+  font-size: 2.3rem;
+  margin-bottom: 1.2rem;
+  text-transform: lowercase;
+}
+p {
+  line-height: 1.3;
+  font-family: "Merriweather", sans-serif;
+  color: #222;
+  font-size: 1.6rem;
+}
+p .howto {
+  font-family: "Alfa Slab One", sans-serif;
+  color: #020873;
+  font-size: inherit;
+}
+strong {
+  font-weight: bold;
+}
+div.main {
+  margin: 15px 5vw;
+}
+@media (min-width: 1000px) {
+  div.main {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+}
+header {
+  flex-direction: row;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(#4bd1a9, #effde4);
+}
+header div.header {
+  align-items: left;
+  width: 400px;
+  padding: 25px;
+  border: 10px solid #020873;
+}
+header div.header h2 {
+  color: #020873;
+}
+div.modal {
+  max-width: 400px;
+  margin: 0 auto;
+  border: 10px solid #020873;
+}
+@media (min-width: 400px) {
+  div.modal {
+    margin: 0 auto;
+  }
+}
+div.modal header {
+  margin: 0;
+  height: 175px;
+  background-image: linear-gradient(#4bd1a9, #effde4);
+}
+div.modal header div.header {
+  align-items: left;
+  width: 400px;
+  border: 0;
+}
+div.modal header div.header h2 {
+  color: #020873;
+}
+div.modal .content1 {
+  display: flex;
+  flex-direction: column;
+  padding: 0 25px;
+  margin-bottom: 15px;
+}
+div.modal .content1 p.logfield {
+  padding: 4px;
+  margin: 4px;
+  border: 2px solid #94f1c3;
+}
+div.modal .content2 {
+  padding: 0 25px;
+  margin-bottom: 15px;
+}
+div.modal .join {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+div.modal .join .button {
+  background-color: #020873;
+  color: #effde4;
+  padding: 4px;
+  width: 35%;
+  text-align: center;
+  border: 10px solid #020873;
+}
+div.modal .join .button:hover {
+  background-color: #effde4;
+  color: #020873;
+}
+section.nav nav {
+  padding: 10px;
+  margin: 20px 0;
+  background-color: #222;
+  max-width: 100%;
+  font-size: 1.6rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+section.nav nav a {
+  color: #b3d8a0;
+  text-decoration: none;
+}
+@media (max-width: 500px) {
+  section.nav nav a {
+    padding: 12px;
+    margin: 0;
+    border-bottom: 3px solid #b3d8a0;
+    text-align: center;
+  }
+}
+@media (max-width: 500px) {
+  section.nav nav {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding: 0;
+  }
+}
+section.nav div.intro {
+  padding: 0 0 25px 0;
+}
+div.content1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+@media (max-width: 500px) {
+  div.content1 {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding: 0;
+  }
+}
+div.content1 .services {
+  border-top: 5px solid #94f1c3;
+  width: 23%;
+  padding: 25px;
+}
+@media (max-width: 500px) {
+  div.content1 .services {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+div.content2 {
+  margin: 25px 0 0;
+  padding: 35px 0 0;
+}
+div.content2 .client {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 35px;
+}
+div.content2 .client img {
+  max-width: 25%;
+  border-radius: 35px;
+}
+div.content2 .client p {
+  max-width: 72%;
+}
+div.contact {
+  margin: 35px 0;
+  display: flex;
+  flex-direction: row;
+}
+div.contact .bits {
+  max-width: 325px;
+  min-width: 300px;
+  margin: 0 35px 0 0;
+  padding: 0 35px 0 0;
+}
+div.contact .bits * {
+  padding-bottom: 10px;
+}
+@media (max-width: 500px) {
+  div.contact .bits {
+    margin: auto;
+    padding: 0;
+  }
+  div.contact .bits h4 {
+    display: none;
+  }
+}
+div.contact .info ul li {
+  padding: 10px;
+}
+@media (max-width: 500px) {
+  div.contact {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding: 0;
+    align-items: center;
+  }
+}

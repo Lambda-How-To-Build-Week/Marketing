@@ -1,0 +1,71 @@
+.testblock() {
+	border: 1px solid red;
+}
+
+.blockborder(@x: @color-borderBase) {
+	border: 5px solid @x;
+}
+.overborder() {
+	border-top: 5px solid @color-borderBase;
+}
+.underborder() {
+	border-bottom: 5px solid @color-borderBase;
+}
+.hardborder() {
+	border: 10px solid @color-2;
+}
+.deadcenter() {
+	justify-content: center;
+	align-items: center;
+}
+.titles() {
+	font-family: "Alfa Slab One", sans-serif;
+	color: @color-2;
+	text-transform: lowercase;
+}
+
+.texts() {
+	font-family: "Merriweather", sans-serif;
+	color: @color-3;
+	font-size: 1.6rem;
+}
+
+.txtbutton {
+    background-color: @color-2;
+    color: @color-4;
+    padding: 4px;
+    width: 35%;
+    text-align: center;
+    .hardborder();
+    &:hover {
+        background-color: @color-4;
+        color: @color-2;
+    }
+}
+
+
+.flexcol() {
+	display: flex !important;
+	flex-direction: column;
+}
+
+.flexrow() {
+	display: flex !important;
+	flex-direction: row;
+}
+
+/****************
+STRAIGHT INCLUDES
+*****************/
+
+.btnFrame {
+	.flexrow();
+	width: 100%;
+	justify-content: flex-end;
+}
+.btn {
+	width: 150px;
+	height: 35px;
+	margin-top: 15px;
+	font-size: 1em;
+}
