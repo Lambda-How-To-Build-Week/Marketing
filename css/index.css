@@ -373,6 +373,8 @@ CLASSES
   font-size: inherit;
 }
 .tweentxt {
+  max-width: 750px;
+  text-shadow: 0 0 15px #ffffff;
   z-index: 99;
   margin: 25px 0;
   padding: 25px 0;
@@ -535,6 +537,7 @@ div.learnmore .about .blurb {
   justify-content: space-evenly;
 }
 div.learnmore .about img {
+  border-radius: 30% 2% 30%;
   object-fit: cover;
   object-position: initial;
 }
