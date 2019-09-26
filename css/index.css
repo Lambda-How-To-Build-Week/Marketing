@@ -330,6 +330,7 @@ header div.header h2 {
 }
 header.about {
   height: 300px;
+  background-image: linear-gradient(#4bd1a9, #effde4);
 }
 header div.about {
   align-items: left;
@@ -373,7 +374,6 @@ CLASSES
   font-size: inherit;
 }
 .tweentxt {
-  max-width: 750px;
   text-shadow: 0 0 15px #ffffff;
   z-index: 99;
   margin: 25px 0;
