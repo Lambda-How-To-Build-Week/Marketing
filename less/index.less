@@ -67,12 +67,14 @@ strong {
 header {
 	// .testblock();
 	position: relative;
-	.flexrow();
+	.flexcol();
+	justify-content: space-evenly;
 	height: 500px;
 	display: flex;
 	.deadcenter();
 	background-image: none;
 	overflow: hidden;
+	text-shadow: 0 0 5px white;
 	div.cover {
 		position: absolute;
 		height: 500px;
@@ -82,7 +84,7 @@ header {
 		// background-size: 50%;
 		animation: move 300s infinite linear;
 		will-change: transform;
-		opacity: .3;
+		opacity: .2;
 	}
 	div.mainbg {
 		position: absolute;
@@ -91,6 +93,7 @@ header {
 		background-image: linear-gradient(@color-success-500, @color-4);
 	}
 	div.header {
+		// .testblock();
 		z-index: 99;
 		align-items: left;
 		width: 400px;
@@ -153,6 +156,8 @@ CLASSES
 }
 
 .tweentxt {
+	// .testblock();
+	z-index: 99;
 	margin: 25px 0;
 	padding: 25px 0;
 	text-align: center;

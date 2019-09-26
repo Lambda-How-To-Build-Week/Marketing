@@ -294,13 +294,15 @@ strong {
 header {
   position: relative;
   display: flex !important;
-  flex-direction: row;
+  flex-direction: column;
+  justify-content: space-evenly;
   height: 500px;
   display: flex;
   justify-content: center;
   align-items: center;
   background-image: none;
   overflow: hidden;
+  text-shadow: 0 0 5px white;
 }
 header div.cover {
   position: absolute;
@@ -309,7 +311,7 @@ header div.cover {
   background-image: url("/img/floatbg02.jpg");
   animation: move 300s infinite linear;
   will-change: transform;
-  opacity: 0.3;
+  opacity: 0.2;
 }
 header div.mainbg {
   position: absolute;
@@ -371,6 +373,7 @@ CLASSES
   font-size: inherit;
 }
 .tweentxt {
+  z-index: 99;
   margin: 25px 0;
   padding: 25px 0;
   text-align: center;
